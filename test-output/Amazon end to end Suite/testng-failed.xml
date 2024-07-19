@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [ Amazon end to end Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Testing on edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="AmazonEndtoEnd.Project_001.TC_12_CheckEachPaymentMethod">
+        <methods>
+          <include name="OtherpaymentMethods"/>
+          <include name="LL"/>
+        </methods>
+      </class> <!-- AmazonEndtoEnd.Project_001.TC_12_CheckEachPaymentMethod -->
+      <class name="AmazonEndtoEnd.Project_001.TC_04_EditingProfileInformation">
+        <methods>
+          <include name="Profile"/>
+          <include name="LL"/>
+        </methods>
+      </class> <!-- AmazonEndtoEnd.Project_001.TC_04_EditingProfileInformation -->
+      <class name="AmazonEndtoEnd.Project_001.TC_11_ValidatetillCheckout">
+        <methods>
+          <include name="validateEntireCheckoutprocess"/>
+          <include name="LL"/>
+        </methods>
+      </class> <!-- AmazonEndtoEnd.Project_001.TC_11_ValidatetillCheckout -->
+      <class name="AmazonEndtoEnd.Project_001.TC_10_UdatingAndRemoveItems">
+        <methods>
+          <include name="LL"/>
+          <include name="cartitems"/>
+        </methods>
+      </class> <!-- AmazonEndtoEnd.Project_001.TC_10_UdatingAndRemoveItems -->
+      <class name="AmazonEndtoEnd.Project_001.TC_15_ReachCartWithoutLogin">
+        <methods>
+          <include name="LL"/>
+          <include name="CheckwithoutLogin"/>
+        </methods>
+      </class> <!-- AmazonEndtoEnd.Project_001.TC_15_ReachCartWithoutLogin -->
+      <class name="AmazonEndtoEnd.Project_001.TC_07_ProductDetails">
+        <methods>
+          <include name="LL"/>
+          <include name="ensureproductdetails"/>
+        </methods>
+      </class> <!-- AmazonEndtoEnd.Project_001.TC_07_ProductDetails -->
+      <class name="AmazonEndtoEnd.Project_001.TC_09_AddingItems">
+        <methods>
+          <include name="addingtoCart"/>
+          <include name="LL"/>
+        </methods>
+      </class> <!-- AmazonEndtoEnd.Project_001.TC_09_AddingItems -->
+      <class name="AmazonEndtoEnd.Project_001.TC_14_GivingRatings">
+        <methods>
+          <include name="RatingforPreviousorders"/>
+          <include name="LL"/>
+        </methods>
+      </class> <!-- AmazonEndtoEnd.Project_001.TC_14_GivingRatings -->
+      <class name="AmazonEndtoEnd.Project_001.TC_08_SortingbyPrice_Reviews">
+        <methods>
+          <include name="sortby"/>
+          <include name="LL"/>
+        </methods>
+      </class> <!-- AmazonEndtoEnd.Project_001.TC_08_SortingbyPrice_Reviews -->
+    </classes>
+  </test> <!-- Testing on edge(failed) -->
+</suite> <!-- Failed suite [ Amazon end to end Suite] -->

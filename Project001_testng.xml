@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name=" Amazon end to end Suite" parallel="tests">
+	<test thread-count="5" name="Testing on edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+
+			<class name="AmazonEndtoEnd.Project_001.Tc_01_Registration" />
+			<class name="AmazonEndtoEnd.Project_001.TC_02_VerifyLogin" />
+			<class name="AmazonEndtoEnd.Project_001.TC_03_Verifry_LoginWith_Wrong_Credentials" />
+			<class name="AmazonEndtoEnd.Project_001.TC_04_EditingProfileInformation" />
+			<class name="AmazonEndtoEnd.Project_001.Tc_05_SearchingforShoe" />
+			<class name="AmazonEndtoEnd.Project_001.TC_06_Searchingproduct_Filters" />
+			<class name="AmazonEndtoEnd.Project_001.TC_07_ProductDetails" />
+			<class name="AmazonEndtoEnd.Project_001.TC_08_SortingbyPrice_Reviews" />
+			<class name="AmazonEndtoEnd.Project_001.TC_09_AddingItems" />
+			<class name="AmazonEndtoEnd.Project_001.TC_10_UdatingAndRemoveItems" />
+			<class name="AmazonEndtoEnd.Project_001.TC_11_ValidatetillCheckout" />
+			<class name="AmazonEndtoEnd.Project_001.TC_12_CheckEachPaymentMethod" />
+
+			<class name="AmazonEndtoEnd.Project_001.TC_14_GivingRatings" />
+			<class name="AmazonEndtoEnd.Project_001.TC_15_ReachCartWithoutLogin" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
